@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Email Authentication Gateway</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>SecureMail Gateway</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#analyzer">Analyzer</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Secure Email Authentication Gateway</h1>
+
+            <p>
+                Protect your email communication using
+                SPF, DKIM and DMARC authentication.
+            </p>
+
+            <a href="#analyzer" class="btn">
+                Analyze Email
+            </a>
+        </section>
+
+        <section class="protocols" id="about">
+            <h2>Email Security Protocols</h2>
+
+            <div class="protocol-container">
+
+                <div class="protocol-card">
+                    <h3>SPF</h3>
+                    <p>
+                        Verifies whether the sending server
+                        is authorized by the domain.
+                    </p>
+                </div>
+
+                <div class="protocol-card">
+                    <h3>DKIM</h3>
+                    <p>
+                        Uses digital signatures to verify
+                        email integrity and domain signing.
+                    </p>
+                </div>
+
+                <div class="protocol-card">
+                    <h3>DMARC</h3>
+                    <p>
+                        Applies domain alignment and
+                        email authentication policies.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="analyzer" id="analyzer">
+            <h2>Email Header Analyzer</h2>
+
+            <p>
+                Paste your raw email header below
+                to analyze authentication results.
+            </p>
+
+            <textarea
+                id="emailHeader"
+                placeholder="Paste your raw email header here...">
+            </textarea>
+
+            <button id="analyzeBtn">
+                Analyze Authentication
+            </button>
+
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            SecureMail Gateway | Email Security Project
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

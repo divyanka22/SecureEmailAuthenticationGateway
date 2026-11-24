@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+header {
+    background: #14213d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: #1d3557;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.btn, button {
+    background: #219ebc;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.protocols, .analyzer {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.protocol-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.protocol-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.protocol-card h3 {
+    color: #219ebc;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    margin: 25px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .protocol-container {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+/* Authentication Results Dashboard */
+
+#results {
+    margin-top: 35px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    text-align: left;
+}
+
+#results h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #14213d;
+    font-size: 24px;
+}
+
+.result-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.result-card {
+    flex: 1;
+    min-width: 150px;
+    padding: 22px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.result-card h4 {
+    margin-bottom: 12px;
+    color: #334155;
+}
+
+.result-status {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-pass {
+    color: #15803d;
+    background: #dcfce7;
+}
+
+.status-fail {
+    color: #b91c1c;
+    background: #fee2e2;
+}
+
+.status-warning {
+    color: #a16207;
+    background: #fef3c7;
+}
+
+.result-status {
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.result-note {
+    margin-top: 22px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .result-container {
+        flex-direction: column;
+    }
+}
+
+
+/* Overall Authentication Summary */
+
+.overall-summary {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eaf3ff;
+    border-left: 5px solid #219ebc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.overall-summary h4 {
+    color: #14213d;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.overall-summary p {
+    color: #334155;
+    font-size: 16px;
+}
+
